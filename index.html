@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Pure Derm | Estética e cuidados com a pele</title>
+  <meta name="description" content="Tratamentos personalizados para cuidar da sua pele e elevar sua autoestima. Agende sua avaliação gratuita na Clínica Pure Derm.">
+  <meta name="theme-color" content="#80685A">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%2380685A'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='%23F5F0EB' font-family='serif'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__in">
+      <a href="#inicio" class="logo" aria-label="Pure Derm, início"><span class="logo__name">Pure Derm</span><span class="logo__sub">Clínica de estética</span></a>
+      <nav id="menu" class="nav" aria-label="Principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#procedimentos">Procedimentos</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#contato">Contato</a>
+        <a href="#contato" class="btn btn--primary nav__cta">Agendar avaliação gratuita</a>
+      </nav>
+      <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"></button>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <h1>Realce sua beleza. Cuide de você.</h1>
+          <p>Na Clínica Pure Derm, acreditamos que cada pessoa possui uma beleza única. Descubra tratamentos personalizados para cuidar da sua pele e elevar sua autoestima.</p>
+          <div class="hero__actions">
+            <a href="#procedimentos" class="btn btn--primary">Conheça nossos procedimentos</a>
+            <a data-wa class="btn btn--ghost" href="#contato">Agende sua avaliação gratuita</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <div class="arch"><img src="img/tratamento.png" alt="Tratamento facial em ambiente acolhedor"></div>
+          <div class="hero__badge">Avaliação gratuita</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section about">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="arch arch--sm"><img src="img/ambiente.png" alt="Recepção elegante com prateleiras de produtos de cuidado com a pele" loading="lazy"></div>
+        </div>
+        <div class="about__text reveal" data-delay="120">
+          <h2>Mais do que estética, proporcionamos experiências de cuidado</h2>
+          <p>Mais do que estética, proporcionamos experiências de cuidado, autoestima e bem-estar. Nossa missão é oferecer tratamentos personalizados, respeitando a individualidade e a beleza natural de cada paciente.</p>
+          <ul class="checks">
+            <li><span><i data-icon="check" data-size="16"></i></span>Atendimento personalizado</li>
+            <li><span><i data-icon="check" data-size="16"></i></span>Ambiente confortável e acolhedor</li>
+            <li><span><i data-icon="check" data-size="16"></i></span>Procedimentos realizados com responsabilidade</li>
+            <li><span><i data-icon="check" data-size="16"></i></span>Foco na satisfação e na autoestima dos pacientes</li>
+          </ul>
+          <a href="#contato" class="btn btn--primary">Agendar avaliação gratuita</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="procedimentos" class="section section--beige">
+      <div class="container">
+        <div class="section-title is-center"><h2>Procedimentos estéticos</h2><p>Cada tratamento começa com uma avaliação para entender o que a sua pele precisa.</p></div>
+        <div id="cards" class="cards"></div>
+      </div>
+    </section>
+
+    <section id="resultados" class="section">
+      <div class="container">
+        <div class="section-title is-center"><h2>Resultados e transformação</h2><p>Clique em uma imagem para ampliar.</p></div>
+        <div id="gallery" class="gallery"></div>
+        <p class="disclaimer">As imagens acima são demonstrativas e serão substituídas por fotos reais, com autorização. Os resultados podem variar conforme cada paciente.</p>
+      </div>
+      <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Imagem ampliada" hidden>
+        <button id="lb-close" class="lightbox__close" aria-label="Fechar"><span data-icon="x" data-size="26"></span></button>
+        <button id="lb-prev" class="lightbox__nav lightbox__nav--prev" aria-label="Anterior"><span data-icon="left" data-size="28"></span></button>
+        <div id="lightbox-body" class="lightbox__body"><div id="lightbox-pair"></div><p id="lightbox-title"></p></div>
+        <button id="lb-next" class="lightbox__nav lightbox__nav--next" aria-label="Próxima"><span data-icon="right" data-size="28"></span></button>
+      </div>
+    </section>
+
+    <section class="section section--nude">
+      <div class="container">
+        <div class="section-title is-center"><h2>O que torna a Pure Derm diferente</h2></div>
+        <div id="diffs" class="diffs"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title is-center"><h2>Quem cuida da pele com a gente</h2><p>Textos de exemplo: substitua por avaliações reais de pacientes, com autorização.</p></div>
+        <div id="quotes" class="quotes"></div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__in reveal">
+        <h2>Sua jornada de autocuidado começa aqui!</h2>
+        <p>Agende sua avaliação gratuita e descubra os tratamentos mais indicados para você.</p>
+        <a data-wa class="btn btn--light" href="#contato">Quero agendar minha avaliação</a>
+      </div>
+    </section>
+
+    <section id="contato" class="section section--beige">
+      <div class="container">
+        <div class="section-title is-center"><h2>Contato e localização</h2><p>Conte o que você procura e retornamos para agendar sua avaliação gratuita.</p></div>
+        <div class="contact">
+          <form id="form" class="form reveal" novalidate>
+            <label class="field"><span>Nome</span><input name="nome" type="text" autocomplete="name"><small role="alert" data-err="nome"></small></label>
+            <label class="field"><span>Telefone (com DDD)</span><input name="telefone" type="tel" autocomplete="tel"><small role="alert" data-err="telefone"></small></label>
+            <label class="field"><span>Mensagem</span><textarea name="mensagem" rows="4"></textarea><small role="alert" data-err="mensagem"></small></label>
+            <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+            <p id="form-msg" class="form__msg" role="status"></p>
+          </form>
+          <div class="info reveal" data-delay="120">
+            <ul>
+              <li><span data-icon="pin" data-size="20"></span><div><strong>Endereço</strong><span data-site="address"></span></div></li>
+              <li><span data-icon="clock" data-size="20"></span><div><strong>Horário de funcionamento</strong><div data-hours></div></div></li>
+              <li><span data-icon="phone" data-size="20"></span><div><strong>Telefone</strong><span data-site="phone"></span></div></li>
+              <li><span data-icon="whatsapp" data-size="20"></span><div><strong>WhatsApp</strong><a data-wa href="#contato">Conversar agora</a></div></li>
+              <li><span data-icon="instagram" data-size="20"></span><div><strong>Instagram</strong><a data-ig data-ig-at href="#contato">@instagram</a></div></li>
+            </ul>
+            <div id="map" class="map"><div class="map__ph"><span data-icon="pin" data-size="28"></span><span>Espaço reservado para o Google Maps</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><p class="logo__name">Pure Derm</p><p class="footer__muted">Estética e cuidados com a pele, com atendimento personalizado e acolhedor.</p></div>
+      <nav aria-label="Links rápidos">
+        <p class="footer__title">Links rápidos</p>
+        <a href="#inicio">Início</a><a href="#sobre">Sobre Nós</a><a href="#procedimentos">Procedimentos</a><a href="#resultados">Resultados</a><a href="#contato">Contato</a>
+      </nav>
+      <div>
+        <p class="footer__title">Contato</p>
+        <span data-site="phone"></span><span data-site="address"></span>
+        <a data-ig data-ig-at class="footer__ig" href="#contato">@instagram</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span data-year></span> Clínica Pure Derm. Todos os direitos reservados.</span>
+      <a id="privacy" href="#contato">Política de privacidade</a>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa href="#contato" aria-label="Falar pelo WhatsApp"><span data-icon="whatsapp" data-size="26"></span></a>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

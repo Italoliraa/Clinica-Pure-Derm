@@ -1,0 +1,16 @@
+CLÍNICA PURE DERM - SITE PRONTO (sem terminal)
+
+COMO ABRIR
+1. Extraia o ZIP (botão direito > Extrair tudo).
+2. No VS Code: Arquivo > Abrir Pasta e escolha a pasta extraída (onde está o index.html).
+3. Instale a extensão "Live Server" (Ritwick Dey), se ainda não tiver.
+4. Clique com o botão direito em index.html > Open with Live Server.
+
+O QUE EDITAR
+- js/config.js : WhatsApp, endereço, telefone, horários, Instagram, mapa, envio do formulário.
+- js/data.js   : textos dos procedimentos, diferenciais e depoimentos (exemplos).
+- img/         : imagens do site.
+- css/style.css: cores e estilo (as cores ficam no começo do arquivo, em :root).
+
+Todos os dados atuais são fictícios. Resultados (antes e depois) e depoimentos são exemplos:
+substitua por conteúdo real e autorizado antes de publicar.
